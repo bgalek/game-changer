@@ -2712,8 +2712,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "5fd9a392-0b3d-4eb9-b248-3803e353876a",
-            "x": 468.1741372956273,
-            "y": 1953.955697211518,
+            "x": 535.2865915351513,
+            "y": 1988.2467322244147,
             "actors": [
                 {
                     "name": "",
@@ -3375,8 +3375,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "6581535a-142f-475e-9ea9-4304f3d8384b",
-            "x": 125.75365909542698,
-            "y": 1954.445569140272,
+            "x": 121.83468366538179,
+            "y": 2011.760584804683,
             "actors": [
                 {
                     "name": "",
@@ -4712,11 +4712,22 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "To juz wszystko na\ndzis Mistrzu.\nJutro kolejna \nszansa pomóc. \nZebrales: $04$ pkt"
+                            "To juz wszystko na\ndzis Mistrzu.\nJutro kolejna \nszansa pomóc. "
                         ],
                         "avatarId": ""
                     },
                     "id": "f6dc3d43-ca8e-4a59-90f3-a9cc1aa87631"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "98a2b108-57e6-4d34-acfd-0d495b44b969",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "d212bb19-77a0-4436-bd7a-c489a58a1056"
                 }
             ],
             "playerHit1Script": [],
@@ -6039,6 +6050,27 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
+        },
+        {
+            "name": "Koniec gry",
+            "backgroundId": "84abd615-dcc9-4d82-ac34-5d01ad02eb85",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "98a2b108-57e6-4d34-acfd-0d495b44b969",
+            "symbol": "scene_12",
+            "x": 337.86820424662363,
+            "y": 1948.5671059952049,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -6168,6 +6200,16 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "tileColors": []
+        },
+        {
+            "id": "84abd615-dcc9-4d82-ac34-5d01ad02eb85",
+            "name": "topscore",
+            "symbol": "bg_topscore",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "topscore.png"
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -9442,7 +9484,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 279,
-        "worldScrollY": 3105,
+        "worldScrollY": 3435,
         "zoom": 204.13498739153147,
         "customColorsEnabled": true,
         "sgbEnabled": false,
