@@ -64,19 +64,7 @@
                     "frame": 0,
                     "spriteType": "static",
                     "animSpeed": 15,
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "4",
-                                "value": {
-                                    "type": "number",
-                                    "value": 0
-                                }
-                            },
-                            "id": "fbd5606e-6a80-444c-9aeb-26732afc6469"
-                        }
-                    ],
+                    "startScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -196,6 +184,27 @@
                             "id": "d30dd409-36b5-4c59-a209-fd544ea84fb0"
                         },
                         {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "5",
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_VARIABLE_MATH_EVALUATE",
+                                        "args": {
+                                            "variable": "4",
+                                            "expression": "$04$ + 100"
+                                        },
+                                        "id": "01ad8770-8b1a-452f-9994-162f48b3a747"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "e4639d4e-0a78-4b2c-a63f-e2500dc190f0"
+                        },
+                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "$self$",
@@ -220,27 +229,6 @@
                                 "__collapse": true
                             },
                             "id": "8e193f38-a00f-4942-b9c1-fc04ec70e97d"
-                        },
-                        {
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "5",
-                                "__collapseElse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_VARIABLE_MATH_EVALUATE",
-                                        "args": {
-                                            "variable": "4",
-                                            "expression": "$04$ + 100"
-                                        },
-                                        "id": "01ad8770-8b1a-452f-9994-162f48b3a747"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "e4639d4e-0a78-4b2c-a63f-e2500dc190f0"
                         },
                         {
                             "command": "EVENT_SWITCH_SCENE",
@@ -1018,6 +1006,17 @@
                         "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
                     },
                     "id": "f32efed4-6eb6-4c83-99e0-ef644b42633a"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "4",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "cd30f8a5-fac2-4572-a40e-770105fd3a49"
                 }
             ],
             "playerHit1Script": [],
@@ -1467,19 +1466,7 @@
                     "movementType": "static",
                     "script": [],
                     "spriteType": "static",
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "4",
-                                "value": {
-                                    "type": "number",
-                                    "value": 0
-                                }
-                            },
-                            "id": "0f28b3e9-9d25-4751-83ad-a2094172f993"
-                        }
-                    ],
+                    "startScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -2125,19 +2112,7 @@
                     "movementType": "static",
                     "script": [],
                     "spriteType": "static",
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "4",
-                                "value": {
-                                    "type": "number",
-                                    "value": 0
-                                }
-                            },
-                            "id": "0ccdd80a-699e-4df2-9ace-48761d85a7b6"
-                        }
-                    ],
+                    "startScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -2783,19 +2758,7 @@
                     "movementType": "static",
                     "script": [],
                     "spriteType": "static",
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "4",
-                                "value": {
-                                    "type": "number",
-                                    "value": 0
-                                }
-                            },
-                            "id": "ae1c86ce-eb1d-4f5a-8da1-68a3c65e75db"
-                        }
-                    ],
+                    "startScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -3446,19 +3409,7 @@
                     "movementType": "static",
                     "script": [],
                     "spriteType": "static",
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "4",
-                                "value": {
-                                    "type": "number",
-                                    "value": 0
-                                }
-                            },
-                            "id": "ccb931b5-61a7-4cca-a514-e8f6f0e2f544"
-                        }
-                    ],
+                    "startScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -4712,7 +4663,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "To juz wszystko na\ndzis Mistrzu.\nJutro kolejna \nszansa pomóc. "
+                            "To juz wszystko na\ndzis Mistrzu.\nJutro kolejna \nszansa pomóc. \nZebrales $04$ pkt"
                         ],
                         "avatarId": ""
                     },
@@ -5125,7 +5076,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Gratulacje!\nPomogles zmniejszyc\nzuzycie wody.\n\nOtrzymujesz 100 pkt"
+                                        "Gratulacje!\nZmniejszyles\nzuzycie wody.\n\nOtrzymujesz 100 pkt"
                                     ],
                                     "avatarId": ""
                                 },
@@ -9483,8 +9434,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 279,
-        "worldScrollY": 3435,
+        "worldScrollX": 271,
+        "worldScrollY": 600,
         "zoom": 204.13498739153147,
         "customColorsEnabled": true,
         "sgbEnabled": false,
